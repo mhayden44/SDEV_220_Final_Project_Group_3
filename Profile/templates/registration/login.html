@@ -1,0 +1,15 @@
+{% extends 'base_login.html' %}
+{% include 'navbar.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/style.css' %}">
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<h2>Log In</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Log In</button>
+</form>
+{% endblock %}  
