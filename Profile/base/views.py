@@ -5,8 +5,8 @@ from django.shortcuts import render
 def home(request):
 	return render(request, "home.html")
 
-def projects(request):
-	return render(request, "projects.html")
+def mens(request):
+	return render(request, "mens.html")
 
-def contact(request):
-	return render(request, "contact.html")
+def womens(request):
+	return render(request, "womens.html")
