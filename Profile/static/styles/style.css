@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 .header {
     padding: 30px;
     text-align: center;
@@ -36,6 +37,36 @@ navbar {
 	navbar ul li a:hover {
 	background-color: rgb(11, 221, 29);
 	}
+
+.sidenav {
+	width: 160px; /* Set the width of the sidebar */
+	position:fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 2; /* Stay on top */
+	top: 10%; /* Stay at the top */
+	left: 0;
+	background-color: rgb(17, 17, 17); /* Black */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 20px;
+}
+	  
+/* The navigation menu links */
+.sidenav a {
+	padding: 2px 8px 2px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+}
+.sidenav ul{
+	width: 100%;
+	list-style: none;
+	overflow: hidden;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav ul li:hover {
+	color: #811d1d;
+}
 
 registration {
     width: 100%;
