@@ -24,5 +24,12 @@ class Shoe(models.Model):
     gender = models.CharField(max_length=1,null=True)
     photo = models.ImageField(storage=fs,null=True)
 
+    @staticmethod
+    def get_shoes_by_id(ids):
+        return Shoe.objects.filter (id__in=ids)
+    @staticmethod
+    def get_all_shoes():
+        return Shoe.objects.all()
+
     def __str__(self):
         return self.name
